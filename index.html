@@ -10,13 +10,14 @@ CCTB - College
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Introduction to Internet Programming and Web Applications">
-    <title>CCTB - Introduction to Internet Programming and Web Applications</title>
+    <title>CCTB - Introduction to Internet Programming and Web Applications prueba</title>
     <!-- Link CSS files -->
     <link rel="stylesheet" href="css/core.min.css" />
     <link rel="stylesheet" href="css/vendor_bundle.min.css" />
     <!-- Link favicon-->
     <link rel="shortcut icon" type="image/x-icon"
         href="https://canvascctb.s3.ca-central-1.amazonaws.com/account_1/attachments/95/CCTB_favicon.ico" />
+    <script src="/js/script.js" defer></script>
 </head>
 
 <body>
@@ -75,10 +76,11 @@ CCTB - College
         <!-- QUOTE -->
         <div class="container py-5 mt-5">
 
-
+            
+            <p id="language-display"></p>
 
             <blockquote class="blockquote text-center">
-                <h1 class="mb-5 text-danger">{{User's favorite programming language}}</h1>
+                <h1 id="favPrograL" class="mb-5 text-danger">{{User's favorite programming language}}</h1>
 
                 <p class="h1 col-10 col-lg-7 m-auto fst-italic text-muted">
                     IST 107 - Introduction to Internet Programming and Web Applications.
@@ -108,6 +110,7 @@ CCTB - College
                         <a href="#" class="btn btn-primary rounded-pill d-inline-flex align-items-end px-4"
                             id="dialog-box">
                             <span class="me-2">Dialog box</span>
+                            <!--<button onclick="getPreferredLanguage()">Enter Your Preferred Programming Language</button>-->
                             <svg width="18px" height="18px" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                 class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
